@@ -34,7 +34,7 @@ The pond appears behind the next conversation you open in the desktop app (or on
 
 Your choices are saved and used in every new session.
 
-![The pond behind a chat](docs/claude-chat.png)
+![With the sidebar open](docs/claude-sidebar.png)
 
 ## Good to know
 

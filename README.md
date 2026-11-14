@@ -2,7 +2,9 @@
 
 A calm koi pond behind your conversations in the Claude desktop app. [ASCII Koi](https://github.com/pursurer/ascii-koi) drawn in text-character tiles swim across the window, their tails beating, light glinting on their scales, over a softly drifting caustic net. The app's panels frost over the pond, so the chat stays easy to read.
 
-![Koi Backdrop in the Claude desktop app](docs/claude-window.png)
+![Koi Backdrop in the Claude desktop app: the pond behind a chat, then /koi blue](docs/koi-backdrop.gif)
+
+▶ [Watch the film](docs/koi-backdrop-film.mp4) (28 s, with sound): black, blue and white water, recorded in the real app.
 
 ## Install
 
@@ -33,6 +35,8 @@ The pond appears behind the next conversation you open in the desktop app (or on
 | `/koi off` · `/koi on` | Takes the pond away or brings it back |
 
 Your choices are saved and used in every new session.
+
+![Koi Backdrop in the Claude desktop app](docs/claude-window.png)
 
 ![With the sidebar open](docs/claude-sidebar.png)
 

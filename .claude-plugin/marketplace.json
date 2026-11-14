@@ -1,0 +1,16 @@
+{
+  "name": "koi-backdrop",
+  "owner": {
+    "name": "pursurer"
+  },
+  "metadata": {
+    "description": "The koi-backdrop mod for the Claude desktop app: an animated ASCII Koi pond behind the conversation."
+  },
+  "plugins": [
+    {
+      "name": "koi-backdrop",
+      "source": "./",
+      "description": "An animated ASCII Koi pond behind the conversation in the Claude desktop app."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "koi-backdrop",
+  "version": "1.0.0",
+  "description": "An animated ASCII Koi pond behind the conversation in the Claude desktop app: twelve koi drawn in text-character tiles swim over a drifting caustic net, in black, blue or white water. /koi changes the water, the size and the glass.",
+  "author": {
+    "name": "pursurer",
+    "url": "https://github.com/pursurer"
+  },
+  "homepage": "https://github.com/pursurer/claude-koi-backdrop",
+  "repository": "https://github.com/pursurer/claude-koi-backdrop",
+  "license": "MIT",
+  "keywords": ["theme", "backdrop", "koi", "ascii"]
+}

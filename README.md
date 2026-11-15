@@ -3,10 +3,10 @@
 **A calm koi pond behind your conversations in the Claude desktop app.** Twelve [ASCII Koi](https://github.com/pursurer/ascii-koi) drawn in text-character tiles swim across the window, their tails beating, light glinting on their scales, over a softly drifting caustic net. The app's panels frost over the pond, so the chat stays easy to read.
 
 <p align="center">
-  <a href="#the-film"><img src="docs/koi-backdrop.gif" alt="The title KOI with koi swimming inside its letters, then a Claude desktop window with a haiku chat over the black pond. /koi blue is typed in the prompt box and the water turns blue behind the chat." width="100%"></a>
+  <a href="#the-film"><img src="docs/koi-backdrop.gif" alt="The title Koi Backdrop over a close-up of one koi drawn in character tiles, then the camera pulls out to a Claude desktop window with a haiku chat over the black pond. /koi blue is typed in the prompt box and the water turns blue behind the chat with a ripple." width="100%"></a>
 </p>
 
-<p align="center"><a href="#install"><b>▶ Install (one command)</b></a> &nbsp;·&nbsp; <a href="#the-film">Watch the film (37 s, sound on)</a> &nbsp;·&nbsp; <a href="#use">The /koi command</a></p>
+<p align="center"><a href="#install"><b>▶ Install (one command)</b></a> &nbsp;·&nbsp; <a href="#the-film">Watch the film (38 s, sound on)</a> &nbsp;·&nbsp; <a href="#use">The /koi command</a></p>
 
 <!-- family-nav:start -->
 <p align="center"><sub>Part of the <a href="#the-ascii-koi-family">ASCII Koi family</a>: <a href="https://github.com/pursurer/ascii-koi">ASCII Koi</a> · <a href="https://github.com/pursurer/codex-koi">Codex Koi</a> · <b>Koi Backdrop</b> · <a href="https://github.com/pursurer/one-page-is-all-you-need">One Page</a></sub></p>
@@ -26,9 +26,9 @@ The pond fills the whole window, behind the sidebar and the session rail too, in
 
 ## The film
 
-https://github.com/user-attachments/assets/2a3f3e1d-3597-4c08-8b56-78b28ca4a442
+https://github.com/user-attachments/assets/95db123a-1041-4416-b863-3b92ee3da65e
 
-37 seconds, sound on, one take in the real app: the sidebar, the session rail, and `/koi blue`, `/koi white`, `/koi black`.
+38 seconds, sound on, one take in the real app: `/koi blue`, `/koi white`, `/koi black`, the sidebar and the session rail, with a score written for the film.
 
 ## Install
 

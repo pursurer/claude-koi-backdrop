@@ -49,10 +49,18 @@ const ROOM = 128000
 const CW = 10, CH = 13, K = 1.85
 const N = 10
 /*
- * Koi drawn each in its own right. Each costs some 13K characters, so 8 and
- * the water's net fill the room; more koi are mirror images of these.
+ * How much finer than ASCII Koi's the koi's cells are on screen. Each koi is
+ * posed GRAIN times longer in the same cells, and the view is GRAIN times
+ * wider, so a koi keeps its size and is drawn in GRAIN^2 times as many cells.
+ * The water's net is laid out for the screen and keeps its cells.
  */
-const UNIQUE = 8
+const GRAIN = 1.3
+/*
+ * Koi drawn each in its own right. At GRAIN 1.3 each costs some 22K
+ * characters, so 5 and the water's net fill the room; more koi are mirror
+ * images of these.
+ */
+const UNIQUE = 5
 /* colours a step apart look the same on a cell, and cells of one colour share one element */
 const STEP = 12
 /*
@@ -84,7 +92,8 @@ const GAITS = [
   { speed: 26, beat: 1.7, tail: 10, bend: 18 },
   { speed: 31, beat: 1.45, tail: 9.5, bend: 16 },
   { speed: 37, beat: 1.25, tail: 9, bend: 14 },
-]
+  /* speed and tail in the view's pixels, GRAIN of them to one of the screen's at size 100; beat and bend are seconds */
+].map(g => ({ ...g, speed: g.speed * GRAIN, tail: g.tail * GRAIN }))
 /*
  * The path swings off the lane by at most this slope. A slice is a column of
  * upright cells, so the body follows a bend by sliding its columns, not by
@@ -359,6 +368,8 @@ const apart = (a, b, d) => Math.sqrt(Math.max(0, a * a + b * b - 2 * a * b * Mat
  */
 function sprite({ canvas, pond }, index, angle, gait, paints, shade, curve = 0) {
   const f = pond.fish[index]
+  /* GRAIN times longer: the same koi in finer cells once the view is GRAIN times wider */
+  f.L0 *= GRAIN; f.seg *= GRAIN
   let HC = 0, HR = 0
   for (const o of pond.fish) o.seen = o === f ? 1 : 0
   /* a little off the cell's centre: a sample that lands exactly on the snout has no width to divide by */
@@ -551,7 +562,7 @@ const weave = rise => {
  */
 export function bakeScene(look, { width = 1890, koi = 12 } = {}) {
   const palette = WATERS[look] ?? WATERS.blue
-  const W = Math.round(width / CW) * CW, H = Math.round((W * 0.625) / CH) * CH
+  const W = Math.round((width * GRAIN) / CW) * CW, H = Math.round((W * 0.625) / CH) * CH
   const dot = palette.dark ? palette.koiLight : palette.ink
   /* a dark water's shadow is black, a light one's the water darker */
   const shade = palette.dark ? '#000' : shadeOf(palette.water)

@@ -4,7 +4,7 @@ A calm koi pond behind your conversations in the Claude desktop app. [ASCII Koi]
 
 ![Koi Backdrop in the Claude desktop app: the pond behind a chat, then /koi blue](docs/koi-backdrop.gif)
 
-▶ [Watch the film](docs/koi-backdrop-film.mp4) (28 s, with sound): black, blue and white water, recorded in the real app.
+▶ [Watch the film](docs/koi-backdrop-film.mp4) (37 s, with sound): black, blue and white water, the sidebar and the session rail, recorded in the real app.
 
 ## Install
 
@@ -39,6 +39,8 @@ Your choices are saved and used in every new session.
 ![Koi Backdrop in the Claude desktop app](docs/claude-window.png)
 
 ![With the sidebar open](docs/claude-sidebar.png)
+
+![With the session rail open, in white water](docs/claude-rail.png)
 
 ## Good to know
 
